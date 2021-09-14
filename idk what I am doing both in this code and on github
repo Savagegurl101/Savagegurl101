@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+
+class Student {
+    private:
+        string grade;
+    public:
+       string Name;
+       
+       int age; 
+       double gpa;
+       bool isHonorRole;
+      Student(string studentName, int studentAge, string studentGrade, double studentGpa, string honorRole) {
+        Name = studentName;
+        age = studentAge;
+        gpa = studentGpa;
+        setGrade(studentGrade);
+    }
+    
+    void setGrade (string studentGrade) {
+          if(studentGrade == "A+" || studentGrade == "A-" || studentGrade == "A" || studentGrade == "B+" || studentGrade == "B-" || studentGrade == "B" || studentGrade == "C+" || studentGrade == "C-" || studentGrade == "C" || studentGrade == "D-" || studentGrade == "D" || studentGrade == "F") {
+               grade = studentGrade;
+          } else {
+             grade = "Not graded or invalid grade";
+               }
+             
+         } 
+         
+         string getGrade() {
+             return grade;
+         }
+         
+         
+         {
+    if (studentGpa < 3.0) {
+         isHonorRole = false;
+         honorRole = "No";
+   } else {
+         isHonorRole = true;
+         honorRole = "Yes";
+    }
+         }
+};  
+
+   int main() 
+   
+{
+    string honorRole;
+    
+    Student ("Jeremy Johnson", 13, "D-", 2.5, honorRole);
+
+   return 0;
+}
