@@ -1,0 +1,87 @@
+#include <iostream>
+using namespace std;
+class Job {
+    public:
+        string company;
+        string position;
+        string dateApplied;
+        string adress;
+        string applicationStatus;
+};
+int main()
+{
+   
+    Job job1;
+    job1.company = "Pizza Hut";
+    job1.position = "Pizza maker";
+    job1.dateApplied = "06/18/2021";
+    job1.adress = "1234 Somewhere Aver";
+    job1.applicationStatus = "Not Hired";
+   
+    Job job2;
+    job2.company = "Gordon's";
+    job2.position = "Fisherman";
+    job2.dateApplied = "06/18/2021";
+    job2.adress = "2312, IDK Street";
+    job2.applicationStatus = "applied";
+    
+    Job job3;
+    job3.company = "ABC NEWS";
+    job3.position = "New's anchor";
+    job3.dateApplied = "06/18/2021";
+    job3.adress = "123, ABC Ave";
+    job3.applicationStatus = "Not Hired";
+    
+    Job job4;
+    job4.company = "Samsung";
+    job4.position = "Clerk";
+    job4.dateApplied = "06/18/2021";
+    job4.adress = "456, That Area, NY";
+    job4.applicationStatus = "applied";
+    
+    Job job5;
+    job5.company = "Bakey";
+    job5.position = "Cale froster";
+    job5.dateApplied = "06/18/2021";
+    job5.adress = "678, applehead dr";
+    job5.applicationStatus = "applied";
+    
+    Job job6;
+    job6.company = "Pet store";
+    job6.position = "Scooper";
+    job6.dateApplied = "06/18/2021";
+    job6.adress = "234 nowhere ave";
+    job6.applicationStatus = "applied";
+    
+    Job job7;
+    job7.company = "Ice cream shop";
+    job1.position = "Scooper";
+    job7.dateApplied = "06/18/2021";
+    job7.adress = "Here Dr";
+    job7.applicationStatus = "applied";
+    
+    Job job8;
+    job8.company = "Freddy Fazbear's Pizza";
+    job8.position = "NightGuard";
+    job8.dateApplied = "19-Jul-2021";
+    job8.adress = "235, Memory Lane";
+    job8.applicationStatus = "reviewed";
+    
+    Job job9;
+    job9.company = "Fazbear's Fright";
+    job9.position = "Actor";
+    job9.dateApplied = "03-Aug-2021";
+    job9.adress = "Afton Dr";
+    job9.applicationStatus = "reviewed";
+    
+    Job job10;
+    job10.company = "Circus Baby's Entertainment and Rental";
+    job10.position = "Repairperson";
+    job10.dateApplied = "29-Jul-2021";
+    job10.adress = "345, clown street";
+    job10.applicationStatus = "Hired";
+    
+    cout << job1.company << endl;
+    
+    return 0;
+}
